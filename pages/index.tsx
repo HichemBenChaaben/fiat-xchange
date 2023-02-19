@@ -1,13 +1,14 @@
-import Link from 'next/link'
-import Layout from '../components/Layout'
+import Logo from '../components/atoms/Logo';
+import Layout from '../components/layouts/Layout';
+import Converter from '../components/organisms/Converter';
 
-const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">About</Link>
-    </p>
-  </Layout>
-)
+const IndexPage = () => {
+  return (
+    <Layout title="Currency converter | Next.js + TypeScript Example">
+      <Logo />
+      <Converter />
+    </Layout>
+  );
+};
 
-export default IndexPage
+export default IndexPage;

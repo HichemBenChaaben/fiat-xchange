@@ -1,3 +1,28 @@
+# Currency converter
+
+This project was created and bootstrapped using nextjs with typescript
+
+## Install and run locally
+
+`npm install && npm start`
+
+## About the project
+
+The solution is a isomorphic frontend application that has a server side and a client side developed in just few hours (roughly 4)
+with a much more focus on the user experience rather than DX.
+
+1- server side
+Also includes an endpoint to jokes endpoints, since the random jokes can't return
+10 jokes, the endpoiunt act as a wrapper with `Promise.all`
+
+2- client side
+Fetches the jokes from the endpoint display them with a timer that is initially paused and can fetch a joke every 5 seconds.
+A possibiblity to bookmark jokes and store them in the local storage of the client browser.
+
+3- Deployment with ci/cd
+a sample github action is under `.github/` folder to deploy the project to vercel
+it isn't really deploying anything at the moment, to deploy the project we can replace the secrets with real values.
+
 # TypeScript Next.js example
 
 This is a really simple project that shows the usage of Next.js with TypeScript.
