@@ -3,7 +3,7 @@
 
 ## demo
 
-https://watch.screencastify.com/v/poGLMR4s1T3sPO2Xpsju
+https://watch.screencastify.com/v/lWd1LwdVFLZp8FyEDrmO
 
 This project was created and bootstrapped using nextjs with typescript
 
