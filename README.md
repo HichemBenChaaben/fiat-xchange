@@ -1,4 +1,9 @@
-# Currency converter
+# Fiat currency converter
+
+
+## demo
+
+https://watch.screencastify.com/v/lWd1LwdVFLZp8FyEDrmO
 
 This project was created and bootstrapped using nextjs with typescript
 
