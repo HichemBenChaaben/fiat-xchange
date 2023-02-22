@@ -11,6 +11,9 @@ import ConversionRate from '../atoms/ConversionRate';
 import { formatCurrency } from '../../utils';
 import CopyToClipboardButton from '../molecules/copyToClipBoardButton';
 import { useRouter } from 'next/router';
+import Chart from './Chart';
+import IconStock from '../icons/stock';
+import IconConvert from '../icons/convert';
 
 const Converter = () => {
   const {
@@ -25,7 +28,7 @@ const Converter = () => {
     state,
     loading,
   } = useContext(AppCtx);
-
+  const [isChart, setIsChart] = useState(false);
   const [currentConversion, setCurrentConversion] = useState(null);
   const [showCurrencies, setShowCurrencies] = useState(false);
   const [changeMode, setChangeMode] = useState(null);
@@ -111,8 +114,9 @@ const Converter = () => {
           />
         </Modal>
       )}
-      <form onSubmit={handleConversion}>
-        <div className="convert-box">
+
+      <div className="convert-box">
+        <form onSubmit={handleConversion}>
           <div className="convert-box-inputs">
             <div className="convert-box-input">
               <CurrencyAmount
@@ -184,8 +188,9 @@ const Converter = () => {
               {loading ? 'loading...' : '⚡️ shazam'}
             </button>
           </div>
-        </div>
-      </form>
+        </form>
+        <Chart from={currencyFrom} to={currencyTo} />
+      </div>
     </div>
   );
 };

@@ -8,7 +8,9 @@
   },
   "dependencies": {
     "country-flag-icons": "^1.5.5",
+    "date-fns": "^2.29.3",
     "framer-motion": "^9.0.4",
+    "lightweight-charts": "^4.0.0",
     "lodash": "^4.17.21",
     "memory-cache": "^0.2.0",
     "next": "latest",
