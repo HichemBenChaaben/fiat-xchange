@@ -12,8 +12,6 @@ import { formatCurrency } from '../../utils';
 import CopyToClipboardButton from '../molecules/copyToClipBoardButton';
 import { useRouter } from 'next/router';
 import Chart from './Chart';
-import IconStock from '../icons/stock';
-import IconConvert from '../icons/convert';
 
 const Converter = () => {
   const {

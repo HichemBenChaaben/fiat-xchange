@@ -6,7 +6,7 @@ const useConversion = () => {
   const initialState = {
     symbols: [],
     loading: false,
-    currencyFrom: 'EUR',
+    currencyFrom: 'BTC',
     currencyTo: 'USD',
     amount: null,
     conversions: getFromLocalStorage('conversions') || [],
