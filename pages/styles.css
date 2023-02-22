@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
-body,html {
+body,
+html {
   margin: 0;
   padding: 0;
 }
@@ -15,14 +16,19 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type=number] {
+input[type='number'] {
   -moz-appearance: textfield;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
-  background: radial-gradient(100% 100% at 50% 0,rgba(255,184,226,.51) 0,rgba(255,255,255,0) 100%),#fff;
+  background: radial-gradient(
+      100% 100% at 50% 0,
+      rgba(255, 184, 226, 0.51) 0,
+      rgba(255, 255, 255, 0) 100%
+    ),
+    #fff;
   min-height: 100%;
   height: 100vh;
   background-repeat: no-repeat;
@@ -99,7 +105,7 @@ body {
   font-size: 26px;
 }
 .convert-box-convert-btn button:disabled {
-  background: #754d92
+  background: #754d92;
 }
 
 .convert-box-current-selected {
@@ -116,7 +122,7 @@ body {
   background: transparent;
   border: none;
   color: #4c0082;
-  background:#cfd4d9;
+  background: #cfd4d9;
   cursor: pointer;
   border-radius: 6px;
   font-size: 16px;
@@ -164,7 +170,6 @@ body {
   width: 35px;
 }
 
-
 /* modal component  */
 
 .modal {
@@ -201,7 +206,7 @@ body {
 .convert-box-inputs {
   display: flex;
   flex-direction: column;
-  position:relative;
+  position: relative;
 }
 .convert-box-switch {
   position: absolute;
@@ -223,7 +228,7 @@ body {
   cursor: pointer;
 }
 .convert-box-switch button:hover {
-  background: #e8e2fd;  
+  background: #e8e2fd;
 }
 
 .currency-search {
@@ -313,7 +318,6 @@ body {
   border-radius: 8px;
 }
 
-
 /* autocompete */
 .highlighted {
   background: rgb(224, 187, 216);
@@ -344,7 +348,8 @@ body {
   padding: 5px;
 }
 
-.header-cell, .data-cell {
+.header-cell,
+.data-cell {
   text-align: center;
 }
 
@@ -375,11 +380,11 @@ body {
 }
 .convert-box-input-copy-clipboard svg {
   opacity: 0;
-  top:0;
+  top: 0;
   left: 50%;
   top: 5px;
   position: absolute;
-} 
+}
 .convert-box-input-copy-clipboard:hover svg {
   opacity: 1;
 }
@@ -391,43 +396,41 @@ footer {
   text-align: center;
 }
 
-
-
 .switcher {
-	display: flex;
-	align-items: center;
-	height: 30px;
-	margin-top: 8px;
-	color: #2196F3;
+  display: flex;
+  align-items: center;
+  height: 30px;
+  margin-top: 8px;
+  color: #2196f3;
 }
 
 .switcher-item {
-	cursor: pointer;
-	text-decoration: none;
-	display: inline-block;
-	padding: 6px 8px;
-	font-size: 14px;
-	color: #262b3e;
-	background-color: transparent;
-	margin-right: 8px;
-	border: none;
-	border-radius: 4px;
-	outline: none;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  padding: 6px 8px;
+  font-size: 14px;
+  color: #262b3e;
+  background-color: transparent;
+  margin-right: 8px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
 }
 
 .switcher-item:hover {
-	background-color: #f2f3f5;
+  background-color: #f2f3f5;
 }
 
 .switcher-active-item {
-	text-decoration: none;
-	cursor: default;
-	color: #262b3e;
+  text-decoration: none;
+  cursor: default;
+  color: #262b3e;
 }
 
 .switcher-active-item,
 .switcher-active-item:hover {
-	background-color: #e1eff9;
+  background-color: #e1eff9;
 }
 
 .convert-box-mode {
@@ -444,5 +447,5 @@ footer {
   font-size: 1.2rem;
 }
 .convert-box-mode button:hover {
-  background:rgb(210, 217, 238);
+  background: rgb(210, 217, 238);
 }
